@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "generative-ai", "examples/*"
+]
+default-members = ["generative-ai"]
+
+
+[workspace.dependencies]
+tokio = { version = "1.35.1", features = ["rt-multi-thread", "macros"]}
+dotenv = "0.15.0"
